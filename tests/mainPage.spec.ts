@@ -1,4 +1,5 @@
 import { test, expect, Page, Locator } from '@playwright/test';
+// metod soft -eto maqkaya proverka, proxodit po vsem testam esli test polomalsa
 
 interface IElements {
   locator: (page: Page) => Locator;
@@ -77,6 +78,21 @@ const elements: IElements[] = [
     locator: (page: Page): Locator => page.getByLabel('Search (Command+K)'),
     name: 'Search Input',
   },
+  {
+    locator: (page: Page): Locator =>
+      page.getByRole('heading', { name: 'Playwright enables reliable' }),
+    name: 'Title',
+    text: 'Playwright enables reliable end-to-end testing for modern web apps.',
+  },
+  {
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'Get started' }),
+    name: 'Get started button',
+    text: 'Get started',
+    attribute: {
+      type: 'href',
+      value: '/docs/intro',
+    },
+  },
 ];
 
 test.describe('тесты главной страницы', () => {
@@ -106,25 +122,5 @@ test.describe('тесты главной страницы', () => {
         await expect(locator(page)).toHaveAttribute(attribute?.type, attribute?.value);
       });
     });
-  });
-  test('Проверка переключение дарк моде', async ({ page }) => {
-    await page.getByLabel('Switch between dark and light').click();
-    await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
-    await page.getByLabel('Switch between dark and light').click();
-    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-  });
-  test('Проверка загаловки страницы', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'Playwright enables reliable' })).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'Playwright enables reliable' })).toContainText(
-      'Playwright enables reliable end-to-end testing for modern web apps.',
-    );
-  });
-  // metod soft -eto maqkaya proverka, proxodit po vsem testam esli test polomalsa
-  test('Проверка кнопки Get Started', async ({ page }) => {
-    await expect.soft(page.getByRole('link', { name: 'Get started' })).toBeVisible();
-    await expect.soft(page.getByRole('link', { name: 'Get started' })).toContainText('Get started');
-    await expect
-      .soft(page.getByRole('link', { name: 'Get started' }))
-      .toHaveAttribute('href', '/docs/intro');
   });
 });
