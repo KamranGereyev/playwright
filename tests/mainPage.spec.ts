@@ -95,6 +95,8 @@ const elements: IElements[] = [
   },
 ];
 
+const lightMods = ['light', 'dark'];
+
 test.describe('тесты главной страницы', () => {
   // qruppirovka testov
   test.beforeEach(async ({ page }) => {
@@ -121,6 +123,14 @@ test.describe('тесты главной страницы', () => {
       test.step(`Проверка атрибута href ${name}`, async () => {
         await expect(locator(page)).toHaveAttribute(attribute?.type, attribute?.value);
       });
+    });
+  });
+  lightMods.forEach((value) => {
+    test(`Проверка стилей активного ${value} мода`, async ({ page }) => {
+      await page.evaluate((value) => {
+        document.querySelector('html')?.setAttribute('data-theme', value);
+      }, value);
+      await expect(page).toHaveScreenshot(`pageWith${value}Mode.png`);
     });
   });
 });
