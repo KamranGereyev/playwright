@@ -1,11 +1,12 @@
 import { test, expect } from '@playwright/test';
-
+// skip, fixme, fail, only - eti vse anatacii
 test.describe('тесты главной страницы', () => {
   // qruppirovka testov
   test.beforeEach(async ({ page }) => {
     await page.goto('https://playwright.dev/');
   });
-  test('Проверка отображения элементов навигации хеадер', async ({ page }) => {
+  // skip - eto dla toqo ctobi propustit test
+  test.skip('Проверка отображения элементов навигации хеадер', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Playwright logo Playwright' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Docs' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'API' })).toBeVisible();
@@ -16,7 +17,8 @@ test.describe('тесты главной страницы', () => {
     await expect(page.getByRole('button', { name: 'Switch between dark and light' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Search (Command+K)' })).toBeVisible();
   });
-  test('Проверка названий элементов навигации хеадер', async ({ page }) => {
+  //fixme - eto dla toqo ctobi poka cto ne ispravlen poetomu fixme
+  test.fixme('Проверка названий элементов навигации хеадер', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Playwright logo Playwright' })).toContainText(
       'Playwright',
     );
@@ -25,7 +27,8 @@ test.describe('тесты главной страницы', () => {
     await expect(page.getByRole('button', { name: 'Node.js' })).toContainText('Node.js');
     await expect(page.getByRole('link', { name: 'Community' })).toContainText('Community');
   });
-  test('Проверка атрибута href элементов навигации хеадер', async ({ page }) => {
+  // fail - eto oznocayet test upal
+  test.fail('Проверка атрибута href элементов навигации хеадер', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Playwright logo Playwright' })).toHaveAttribute(
       'href',
       '/',
@@ -48,7 +51,8 @@ test.describe('тесты главной страницы', () => {
       'https://aka.ms/playwright/discord',
     );
   });
-  test('Проверка переключение дарк моде', async ({ page }) => {
+  // only - eto zapuskayet imenno only test
+  test.only('Проверка переключение дарк моде', async ({ page }) => {
     await page.getByLabel('Switch between dark and light').click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
     await page.getByLabel('Switch between dark and light').click();
