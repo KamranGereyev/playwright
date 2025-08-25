@@ -1,0 +1,183 @@
+{
+  "cookies": [
+    {
+      "name": "remixlang",
+      "value": "3",
+      "domain": ".vk.com",
+      "path": "/",
+      "expires": 1787214005.485458,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "remixstlid",
+      "value": "9089181172428472728_ykA4STdMu8UKxZ7kVmArF29Fh6TDwW7BY3o2TIuZ3xT",
+      "domain": ".vk.com",
+      "path": "/",
+      "expires": 1787686665.485479,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_uid",
+      "value": "1756150666854723536",
+      "domain": ".stepik.org",
+      "path": "/",
+      "expires": 1787686665,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_d",
+      "value": "1756150666",
+      "domain": ".stepik.org",
+      "path": "/",
+      "expires": 1787686665,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_isad",
+      "value": "2",
+      "domain": ".stepik.org",
+      "path": "/",
+      "expires": 1756222665,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yabs-sid",
+      "value": "1587712521756150665",
+      "domain": "mc.yandex.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "i",
+      "value": "Sao1Q2bUIxyjm6bwoa03k0I8+fQhwoA1A61PVGnHaN1YbuqiKg9mANY/Rs05rTIvL+r6pZesiAgKJeNB+Q7e2v+KF4U=",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1790710665.717717,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yandexuid",
+      "value": "7595386261756150665",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1790710665.717739,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yuidss",
+      "value": "7595386261756150665",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1790710665.717752,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ymex",
+      "value": "2071510665.yrts.1756150665#2071510665.yrtsi.1756150665",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1787686665,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_visorc",
+      "value": "w",
+      "domain": ".stepik.org",
+      "path": "/",
+      "expires": 1756152467,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "csrftoken",
+      "value": "GKs7mBW9OH6qproRvCZhhsYgvVi0Z72c6Txziw63twiWJbevst222mvmDeDu8uwR",
+      "domain": "stepik.org",
+      "path": "/",
+      "expires": 1787600266.635439,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sessionid",
+      "value": "ws6e1w4waiuw24sbdnux9em2lkzh7hw2",
+      "domain": "stepik.org",
+      "path": "/",
+      "expires": 1771702666.368989,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bh",
+      "value": "EkIiTm90O0E9QnJhbmQiO3Y9Ijk5IiwgIkhlYWRsZXNzQ2hyb21lIjt2PSIxMzkiLCAiQ2hyb21pdW0iO3Y9IjEzOSIaA2FybSIMMTM5LjAuNzI1OC41KgI/MDoHIm1hY09TIkIGMTUuMy4xSgI2NFJYIk5vdDtBPUJyYW5kIjt2PSI5OS4wLjAuMCIsIkhlYWRsZXNzQ2hyb21lIjt2PSIxMzkuMC43MjU4LjUiLCJDaHJvbWl1bSI7dj0iMTM5LjAuNzI1OC41ImCL97LFBmoh3MrRtgG78Z+rBPrWhswI0tHt6wP8ua//B9/9x5UC84EC",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1790710667,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://stepik.org",
+      "localStorage": [
+        {
+          "name": "_ym_synced",
+          "value": "{}"
+        },
+        {
+          "name": "_ym30810146_lsid",
+          "value": "681266609063"
+        },
+        {
+          "name": "_ym_retryReqs",
+          "value": "{\"1\":{\"protocol\":\"https:\",\"host\":\"mc.yandex.ru\",\"resource\":\"clmap/30810146\",\"time\":1756150667135,\"counterType\":\"0\",\"params\":{\"page-url\":\"https://stepik.org/learn\",\"pointer-click\":\"rn:976325248:x:32648:y:32767:t:2:p:;QdQ1dAA:X:149:Y:250\"},\"browserInfo\":{\"u\":\"1756150666854723536\",\"v\":\"2164\",\"vf\":\"20e1f0fh7ebo02apxqla6cnmdotpb\",\"rqnl\":1,\"st\":1756150667},\"counterId\":30810146,\"ghid\":377805868,\"telemetry\":{\"gdpr\":\"14\",\"ti\":1}}}"
+        },
+        {
+          "name": "_ym30810146_il",
+          "value": "\"Прохожу\""
+        },
+        {
+          "name": "stepik:last-activity:72291015",
+          "value": "1756150667142"
+        },
+        {
+          "name": "_ym_uid",
+          "value": "\"1756150666854723536\""
+        },
+        {
+          "name": "_ym_wv2rf:30810146:0",
+          "value": "1"
+        },
+        {
+          "name": "_ym30810146:0_reqNum",
+          "value": "9"
+        }
+      ]
+    }
+  ]
+}
